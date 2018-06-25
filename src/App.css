@@ -8,7 +8,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100% 100%;
+  height: 100vh;
   opacity: .6;
   overflow:hidden; 
 }
@@ -35,8 +35,10 @@
 }
 
 .App-title {
-  position: center;
-  
+  position: relative;text-align: center;
+vertical-align: middle;
+line-height: 90px;     
+  color: #FFFFFF;
   font-family: Mate SC;
   font-style: normal;
   font-weight: normal;
@@ -45,12 +47,9 @@
   letter-spacing: 0.15em;
 }
 
-.Title{position: absolute;
-  width: 663px;
-  height: 59px;
-  left: 388px;
-  top: 453px;
-  
+.Title{  
+  text-align: center;
+  vertical-align: middle;
   font-family: Mate SC;
   font-style: normal;
   font-weight: normal;
@@ -58,11 +57,20 @@
   font-size: 48px;
   letter-spacing: 0.15em;
   
+  line-height: 90vh;
   color: #FFFFFF;}
 
 .App-intro {
   font-size: large;
 }
+.center-cropped {
+  width: 100%;
+  height: 100%;
+  object-fit: none; /* Do not scale the image */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .bgColors{
   color: #000000;
 
@@ -71,11 +79,17 @@
   width: auto;
   height: 100%;
 }
+.hero-section{
+  background-color: #000000;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+}
 .Welcome{
   background-color: #000000;
   color: #000000;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
